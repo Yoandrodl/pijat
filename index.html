@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pijat Panggilan Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        green: {
+                            950: '#0F2618', // Very dark green background
+                        },
+                        gold: {
+                            500: '#D4AF37', // Gold accent
+                            400: '#E5C158',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #0F2618;
+            color: #ffffff;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 38, 24, 0.7), rgba(15, 38, 24, 0.9)), url('https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Hero Section -->
+    <header class="hero-bg min-h-screen flex flex-col justify-center items-center text-center px-4 relative">
+        <div class="mb-6 flex space-x-2 text-sm tracking-widest text-gray-300 uppercase font-light">
+            <span>Relax</span> <span>&bull;</span> <span>Refresh</span> <span>&bull;</span> <span>Recharge</span>
+        </div>
+        
+        <h2 class="text-xl md:text-2xl font-light italic mb-8 max-w-2xl text-gray-200">
+            "Saat tubuh mulai lelah, waktunya memberi diri sendiri sedikit perhatian."
+        </h2>
+
+        <h1 class="text-6xl md:text-8xl font-serif font-bold text-white mb-2 tracking-tight">PIJAT</h1>
+        <h1 class="text-5xl md:text-7xl font-serif font-italic text-gold-500 mb-8 gold-gradient">Panggilan</h1>
+
+        <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-xl">
+            Nikmati pengalaman relaksasi profesional langsung di tempat Anda.
+        </p>
+
+        <div class="bg-black/40 border border-gold-500/30 rounded-full px-8 py-3 mb-12 backdrop-blur-sm">
+            <p class="text-lg">Harga mulai <span class="font-bold text-gold-500 text-2xl ml-2">Rp 200.000</span></p>
+        </div>
+
+        <a href="https://wa.me/6281155503130" target="_blank" class="bg-gold-500 hover:bg-gold-400 text-black font-bold text-lg md:text-xl px-10 py-4 rounded-full transition duration-300 shadow-[0_0_15px_rgba(212,175,55,0.4)] flex items-center gap-3">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+            Book Now
+        </a>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-20 px-4 max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-center mb-16 text-gold-500">Layanan Kami</h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+            <!-- Pijat -->
+            <div class="bg-[#163524] rounded-2xl p-6 text-center border border-gold-500/20 hover:border-gold-500 transition duration-300">
+                <div class="w-16 h-16 mx-auto bg-green-950 rounded-full flex items-center justify-center border-2 border-gold-500 mb-4 text-gold-500 text-2xl">
+                    <i class="fa-solid fa-spa"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2 text-gold-500">Pijat</h3>
+                <p class="text-xs text-gray-300">Relaksasi tubuh dan otot yang tegang</p>
+            </div>
+
+            <!-- Kerok -->
+            <div class="bg-[#163524] rounded-2xl p-6 text-center border border-gold-500/20 hover:border-gold-500 transition duration-300">
+                <div class="w-16 h-16 mx-auto bg-green-950 rounded-full flex items-center justify-center border-2 border-gold-500 mb-4 text-gold-500 text-2xl">
+                    <i class="fa-solid fa-spoon"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2 text-gold-500">Kerok</h3>
+                <p class="text-xs text-gray-300">Melancarkan peredaran darah</p>
+            </div>
+
+            <!-- Lulur -->
+            <div class="bg-[#163524] rounded-2xl p-6 text-center border border-gold-500/20 hover:border-gold-500 transition duration-300">
+                <div class="w-16 h-16 mx-auto bg-green-950 rounded-full flex items-center justify-center border-2 border-gold-500 mb-4 text-gold-500 text-2xl">
+                    <i class="fa-solid fa-mortar-pestle"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2 text-gold-500">Lulur</h3>
+                <p class="text-xs text-gray-300">Membuat kulit lebih halus dan segar</p>
+            </div>
+
+            <!-- Refleksi -->
+            <div class="bg-[#163524] rounded-2xl p-6 text-center border border-gold-500/20 hover:border-gold-500 transition duration-300">
+                <div class="w-16 h-16 mx-auto bg-green-950 rounded-full flex items-center justify-center border-2 border-gold-500 mb-4 text-gold-500 text-2xl">
+                    <i class="fa-solid fa-shoe-prints"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2 text-gold-500">Refleksi</h3>
+                <p class="text-xs text-gray-300">Merilekskan tubuh dari dalam</p>
+            </div>
+
+            <!-- Bekam -->
+            <div class="bg-[#163524] rounded-2xl p-6 text-center border border-gold-500/20 hover:border-gold-500 transition duration-300">
+                <div class="w-16 h-16 mx-auto bg-green-950 rounded-full flex items-center justify-center border-2 border-gold-500 mb-4 text-gold-500 text-2xl">
+                    <i class="fa-solid fa-fire-flame-simple"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2 text-gold-500">Bekam</h3>
+                <p class="text-xs text-gray-300">Membuang racun dalam tubuh</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="py-16 px-4 bg-[#0a1a10]">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10 bg-[#163524] rounded-3xl p-8 md:p-12 border border-gold-500/30">
+            <div class="flex-1 text-center md:text-left">
+                <h3 class="text-2xl font-serif text-gold-500 mb-4">Dilayani oleh<br><span class="text-4xl font-bold">Therapist Profesional</span></h3>
+                <p class="text-gray-300 mb-6">Tersedia Therapist Pria & Wanita</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start text-sm">
+                    <div class="flex items-center justify-center gap-2 text-gold-400">
+                        <i class="fa-regular fa-circle-check"></i> Privat
+                    </div>
+                    <div class="flex items-center justify-center gap-2 text-gold-400">
+                        <i class="fa-regular fa-circle-check"></i> Nyaman
+                    </div>
+                    <div class="flex items-center justify-center gap-2 text-gold-400">
+                        <i class="fa-regular fa-circle-check"></i> Aman
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1">
+                <!-- Placeholder for therapist image -->
+                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop" alt="Therapist" class="rounded-2xl shadow-xl w-full h-64 object-cover opacity-80 mix-blend-luminosity">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <footer class="py-16 text-center border-t border-gold-500/20">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Hubungi Kami Sekarang</h2>
+        
+        <div class="inline-flex flex-col items-center justify-center mb-10">
+            <a href="https://wa.me/6281155503130" target="_blank" class="group flex items-center justify-center gap-4 bg-[#163524] border-2 border-gold-500 hover:bg-gold-500 hover:text-black transition-all duration-300 rounded-full px-8 py-4 mb-4">
+                <i class="fa-brands fa-whatsapp text-4xl text-green-500 group-hover:text-black"></i>
+                <div class="text-left">
+                    <div class="text-sm font-medium">Book Now</div>
+                    <div class="text-2xl font-bold tracking-wider">0811 5550 3130</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-400 mb-8 max-w-2xl mx-auto">
+            <div class="flex flex-col items-center gap-2"><i class="fa-solid fa-house text-gold-500 text-xl"></i>Nyaman di Rumah Anda</div>
+            <div class="flex flex-col items-center gap-2"><i class="fa-solid fa-shield-halved text-gold-500 text-xl"></i>Terpercaya</div>
+            <div class="flex flex-col items-center gap-2"><i class="fa-regular fa-clock text-gold-500 text-xl"></i>Pelayanan Cepat</div>
+        </div>
+
+        <p class="text-xs tracking-widest text-gold-500/70 uppercase">
+            Tubuh Lebih Rileks &bull; Pikiran Lebih Tenang &bull; Energi Kembali
+        </p>
+    </footer>
+
+</body>
+</html>
